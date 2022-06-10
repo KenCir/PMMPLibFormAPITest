@@ -1,0 +1,12 @@
+{
+  "name": "ken_cir/lib-form-api-test",
+  "description": "LibFormAPI Test Plugin",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "require-dev": {
+    "pocketmine/pocketmine-mp": "4.4.1"
+  }
+}

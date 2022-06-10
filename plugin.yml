@@ -1,0 +1,31 @@
+name: LibFormAPITest
+description: LibFormAPI Test Plugin
+author: Ken_Cir
+version: 1.0.0
+api: 4.0.0
+main: Ken_Cir\LibFormAPITest\LibFormAPITest
+
+commands:
+  simpleform:
+    description: SimpleFormのテストコマンド
+    usage: /simpleform
+    permission: libformapi.simpleform.command
+  modalform:
+    description: ModalFormのテストコマンド
+    usage: /modalform
+    permission: libformapi.modalform.command
+  customform:
+    description: CustomFormのテストコマンド
+    usage: /customform
+    permission: libformapi.customform.command
+
+permissions:
+  libformapi.simpleform.command:
+    default: true
+    description: SimpleForm Command Permission
+  libformapi.modalform.command:
+    default: true
+    description: ModalForm Command Permission
+  libformapi.customform.command:
+    default: true
+    description: CustomForm Command Permission
