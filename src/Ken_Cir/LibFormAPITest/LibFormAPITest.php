@@ -61,7 +61,7 @@ class LibFormAPITest extends PluginBase
                     // 必須パラメーターでのテスト
                     new ContentLabel("テスト Label"),
                     new ContentToggle("テスト Toggle"),
-                    new ContentSlider("テスト Slider", 1, 10),
+                    new ContentSlider("テスト Slider", 0, 10),
                     new ContentStepSlider("テスト StepSlider", ["1", "5", "10"]),
                     new ContentDropdown("テスト Dropdown", ["0", "1", "2"]),
                     new ContentInput("テスト Input"),
