@@ -18,6 +18,10 @@ commands:
     description: CustomFormのテストコマンド
     usage: /customform
     permission: libformapi.customform.command
+  backform:
+    description: BackForm機能のテストコマンド
+    usage: /backform
+    permission: libformapi.backform.command
 
 permissions:
   libformapi.simpleform.command:
@@ -29,3 +33,6 @@ permissions:
   libformapi.customform.command:
     default: true
     description: CustomForm Command Permission
+  libformapi.backform.command:
+    default: true
+    description: BackForm Command Permission
