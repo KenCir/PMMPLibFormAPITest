@@ -15,7 +15,7 @@ use Ken_Cir\LibFormAPI\Forms\ModalForm;
 use Ken_Cir\LibFormAPI\Forms\SimpleForm;
 use Ken_Cir\LibFormAPI\FormContents\SimpleForm\SimpleFormButton;
 use Ken_Cir\LibFormAPI\FormStack\StackFormManager;
-use Ken_Cir\LibFormAPI\Utils\Util;
+use Ken_Cir\LibFormAPI\Utils\FormUtil;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
@@ -126,7 +126,7 @@ class LibFormAPITest extends PluginBase
                         function (Player $player, bool $data) {
                             if ($data) {
                                 $player->sendMessage("3秒後前のFormに戻ります");
-                                Util::backForm($this, [$this->stackFormManager->getStackFormEnd($player->getXuid()), "reSend"], [], 3);
+                                FormUtil::backForm($this, [$this->stackFormManager->getStackFormEnd($player->getXuid()), "reSend"], [], 3);
                             }
                             else {
                                 $player->sendMessage("処理を終わります");
